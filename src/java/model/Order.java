@@ -22,6 +22,7 @@ public class Order {
     private String city;
     private String province;
     private String postCode;
+    private double quantity ;
 
     public ArrayList<Toy> getToylist() {
         return toylist;
@@ -102,5 +103,13 @@ public class Order {
     public void setPostCode(String postCode) {
         this.postCode = postCode;
     }
-    
+
+    public double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
+    }
+
 }

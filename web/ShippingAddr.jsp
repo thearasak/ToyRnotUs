@@ -14,7 +14,7 @@
     <body>
         <h1>Shipping Address</h1><br />
         Full name<br>
-        <input type="text" id="FullName" name="FullName" style="width: 500px;" /><br>
+        <input type="text" id="Full Name" name="FullName" style="width: 500px;" /><br>
         Address 1<br>
         <input type="text" id="Address1" name="Address1" style="width: 500px;" /><br>
         Address 2<br>
