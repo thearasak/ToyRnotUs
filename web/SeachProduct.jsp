@@ -15,7 +15,8 @@
     <body>      
         <h1>Search  Toy</h1>
         Select age              Select gender<br>
-        <select name="SearchAge">
+        <form action="SearchToyServlet">
+            <select name="SearchAge">
             <option>Toddler</option>
             <option>Baby</option>
             <option>3_to_5</option>
@@ -28,8 +29,8 @@
             <option>Male</option>
             <option>Female</option>
         </select>
-        <input type="submit" value="Search" id="SearchButton" /><br>
-    toys found
+        <input type="submit" value="Search" id="SearchButton" />  <br>
+        toys found
+        </form>
    </body>
-   
 </html>
