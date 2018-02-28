@@ -12,7 +12,7 @@
         <title>Product Detail</title>
     </head>
     <body>
-        <b>Toy name</b><br />
+        <h1>Toy Name</h1><br />
         <div style="width: 100%; height: 200px;">
             <div style="float: left; width: 20%">
                 <img id="ToyPicture" name="ToyPicture" style="width: 20px; height: 80px;" />
