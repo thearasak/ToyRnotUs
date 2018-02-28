@@ -9,7 +9,7 @@
 <%@ page import = "java.io.*,java.util.*,model.Order,model.Toy" %>
 <%
     
-     
+    /* 
     //Test assign Order sesstion
     ArrayList<Toy> tmpToyList = new ArrayList<Toy>();
     Toy tmpToy = new Toy();   
@@ -21,7 +21,7 @@
     tmpOrder.setFullName("Mananya");
     tmpOrder.setToylist(tmpToyList);
     session.setAttribute("ProductDetail",tmpOrder); 
-    
+    */
     
     Order modelToy = (Order)session.getAttribute("ProductDetail");
 %>
