@@ -1,31 +1,34 @@
 *** Settings ***
 Library           Selenium2Library
 
+*** Variables ***
+${URL}            ${EMPTY}
+
 *** Test Cases ***
 ATDD
-    Open Firefox Browser    https://www.google.co.th/
+    Open Firefox Browser    http://128.199.163.79:8080/ToyRnotUs/
     #Page Search Toy
-    Select Age    id=SelectAge    3_to_5
-    Select Gender    id=SelectGender    Female
-    Click Web Element    id=Search
-    Click Web Element    id=ToyId7
+    Select Age    name=SelectAge    3_to_5
+    Select Gender    name=SelectGender    Female
+    Click Web Element    id=SearchButton
     Web Page Should Contain    43 Piece dinner Set
     Web Page Should Contain    Best Froends Forever Magnetic Dress Up
     Web Page Should Contain    Princess Palace
     Web Page Should Contain    Pricess Training Bicycle
     Web Page Should Contain    Sleeping Queens Board Game
+    Click Web Element    id=ToyId7
     #Page Product Detail
-    Select Quantity    id=DetailQuantity    5
+    Comment    Select Quantity    id=DetailQuantity    5
     Calculate Product Total Price
-    Click Web Element    id=ProcessToCheckout
-    #Page Shipping
-    Input Full Name    id=FullName    นายประธาน \ ด่านสกุลเจริญกิจ
-    Input Address 1    id=Address1    เลขที่ 3 อาคารพร้อมพันธุ์ - ลาดพร้าว 3
-    Input Address 2    id=Address2    ถนนลาดพร้าว แขวงจอมพล
-    Input City    id=City    จตุจักร
-    Input Province    id=Province    กรุงเทพ
-    Input Post Code    id=PostCode    10900
-    Click Web Element    id=DeliverBtn
+    Click Web Element    id=CheckOutBtn
+    Comment    #Page Shipping
+    Comment    Input Full Name    id=FullName    นายประธาน ด่านสกุลเจริญกิจ
+    Comment    Input Address 1    id=Address1    เลขที่ 3 อาคารพร้อมพันธุ์ - ลาดพร้าว 3
+    Comment    Input Address 2    id=Address2    ถนนลาดพร้าว แขวงจอมพล
+    Comment    Input City    id=City    จตุจักร
+    Comment    Input Province    id=Province    กรุงเทพ
+    Comment    Input Post Code    id=PostCode    10900
+    Comment    Click Web Element    id=DeliverBtn
     #Page Thank You
     Web Page Should Contain    7
     Web Page Should Contain    Best Froends Forever Magnetic Dress Up
@@ -33,7 +36,7 @@ ATDD
     Web Page Should Contain    124.75
     Web Page Should Contain    50
     Web Page Should Contain    174.75
-    Web Page Should Contain    นายประธาน \ ด่านสกุลเจริญกิจ
+    Web Page Should Contain    นายประธาน ด่านสกุลเจริญกิจ
     Web Page Should Contain    เลขที่ 3 อาคารพร้อมพันธุ์ - ลาดพร้าว 3
     Web Page Should Contain    ถนนลาดพร้าว แขวงจอมพล
     Web Page Should Contain    จตุจักร
