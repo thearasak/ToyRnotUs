@@ -12,7 +12,7 @@
         <title>Search  Toy</title>
     </head>
     
-    <body>  
+    <body>      
         <h1>Search  Toy</h1>
         Select age              Select gender<br>
         <select name="SearchAge">
@@ -22,13 +22,13 @@
             <option>6_to_8</option>
             <option>over8</option>
         </select>
-
+        
         <select name="SearchGender" >
             <option>Neutral</option>
             <option>Male</option>
             <option>Female</option>
         </select>
-            <input type="submit" value="Search" id="SearchButton" /><br>
+        <input type="submit" value="Search" id="SearchButton" /><br>
     toys found
    </body>
    
